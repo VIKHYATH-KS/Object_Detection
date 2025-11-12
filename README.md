@@ -37,6 +37,7 @@ Object_Detection/
 ### 1. Clone the Repository
 
 git clone https://github.com/VIKHYATH-KS/Object_Detection.git
+
 cd Object_Detection
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
