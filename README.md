@@ -1,3 +1,95 @@
+# 🧠 Object Detection using YOLOv5
+
+This project implements **real-time Object Detection** using the **YOLOv5** deep learning model.  
+It can detect and classify multiple objects in **images, videos, and live webcam feeds** with high accuracy.
+
+---
+
+## 🚀 Features
+
+- 🔍 Detects multiple objects in real time  
+- 📸 Works with **images**, **video files**, and **live camera feed**  
+- ⚡ Built using **YOLOv5** (You Only Look Once – v5)  
+- 🧾 Supports custom and pretrained COCO datasets  
+- 💾 Option to save results with bounding boxes  
+- 🖥️ Simple command-line interface for ease of use
+
+---
+
+## 🧩 Project Structure
+
+Object_Detection/
+│
+├── yolov5/ # YOLOv5 core model and utilities
+├── data/ # Dataset / config files
+├── runs/ # Output detections and logs
+├── detect.py # Main detection script
+├── train.py # Training script (if custom dataset used)
+├── requirements.txt # Dependencies
+├── README.md # Project documentation (this file)
+└── ...
+
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+git clone https://github.com/VIKHYATH-KS/Object_Detection.git
+cd Object_Detection
+
+### 2. Create a Virtual Environment (Optional but Recommended)
+python -m venv yolov5_env
+source yolov5_env/bin/activate   # For macOS/Linux
+yolov5_env\Scripts\activate      # For Windows
+
+### 3. Install Dependencies
+python detect.py --source path/to/image.jpg
+
+🧠 Usage
+🔹 Detect Objects in an Image
+python detect.py --source path/to/image.jpg
+
+🔹 Detect Objects in a Video
+python detect.py --source path/to/video.mp4
+
+🔹 Real-Time Detection using Webcam
+python detect.py --source 0
+
+(The number 0 refers to your default webcam.)
+
+🔹 Custom Model (if trained)
+python detect.py --weights runs/train/exp/weights/best.pt --source 0
+
+🧮 Model Details
+
+Base Model: YOLOv5 (PyTorch)
+Framework: Python, OpenCV, Torch
+Classes: 80 (COCO dataset by default)
+Inference Speed: ~30 FPS (depending on hardware)
+
+Requirements:
+Python 3.8+
+torch / torchvision
+OpenCV
+numpy
+matplotlib
+tqdm
+PyYAML
+
+🧑‍💻 Author
+
+Vikhyath K S
+👨‍💻 Creative developer passionate about AI and Computer Vision
+📧 vikhyath010@gmail.com
+🔗 GitHub: VIKHYATH-KS
+
+📜 License
+This project is open-source under the MIT License — free to use and modify for educational and research purposes.
+
+
+
 <div align="center">
   <p>
     <a href="http://www.ultralytics.com/blog/ultralytics-yolov8-turns-one-a-year-of-breakthroughs-and-innovations" target="_blank">
